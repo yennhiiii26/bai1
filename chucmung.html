@@ -2,10 +2,129 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>Trang chúc mừng</title>
+    <title>Thông tin cá nhân</title>
+
+    <style>
+        body {
+            background: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: "Segoe UI", sans-serif;
+        }
+
+        .card {
+            background: white;
+            width: 300px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            padding: 30px;
+        }
+
+        .avatar {
+            width: 80px;
+            height: 80px;
+            background: white;
+            border-radius: 50%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .name {
+            font-size: 24px;
+            color: #333;
+            margin: 0 0 5px 0;
+        }
+
+        .title {
+            color: #666;
+            margin: 0 0 15px 0;
+        }
+
+        .description {
+            color: #888;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .skills {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin: 15px 0;
+        }
+
+        .skills li {
+            background: #e8f4f8;
+            color: #3498db;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 12px;
+        }
+
+        /* BUTTON LINK */
+        .btn {
+            display: inline-block;
+            text-decoration: none;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 25px;
+            font-size: 14px;
+            margin-bottom: 10px;
+            transition: opacity 0.3s;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>🎉 Chào mừng bạn đến trang mới 🎉</h1>
-    <p>Bấm quay lại <a href="index.html">trang chính</a></p>
+
+    <div class="card">
+        <div class="header">
+            <div class="avatar">K</div>
+        </div>
+
+        <div class="content">
+            <h2 class="name">Nguyễn Văn A</h2>
+            <p class="title">Web Developer</p>
+
+            <p class="description">
+                Đam mê lập trình và thiết kế web.
+                Luôn học hỏi công nghệ mới.
+            </p>
+
+            <ul class="skills">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+
+            <!-- QUAY VỀ TRANG CHÚC MỪNG NĂM MỚI -->
+            <a href="index.html" class="btn">Liên hệ</a>
+        </div>
+    </div>
+
 </body>
 </html>
