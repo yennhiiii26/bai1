@@ -2,11 +2,11 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>Thông tin cá nhân</title>
+    <title>Profile Card</title>
 
     <style>
         body {
-            background: #f0f0f0;
+            background: #ffe6ee;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -15,86 +15,88 @@
             font-family: "Segoe UI", sans-serif;
         }
 
+        /* ===== CARD ===== */
         .card {
             background: white;
-            width: 300px;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            width: 320px;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(255, 105, 135, 0.35);
             overflow: hidden;
             text-align: center;
         }
 
+        /* ===== HEADER ===== */
         .header {
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            padding: 30px;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            padding: 35px 0;
         }
 
         .avatar {
-            width: 80px;
-            height: 80px;
-            background: white;
+            width: 90px;
+            height: 90px;
             border-radius: 50%;
-            margin: 0 auto;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 30px;
-            font-weight: bold;
+            border: 4px solid white;
+            object-fit: cover;
         }
 
+        /* ===== CONTENT ===== */
         .content {
-            padding: 20px;
+            padding: 25px 20px;
         }
 
         .name {
             font-size: 24px;
-            color: #333;
-            margin: 0 0 5px 0;
+            color: #d6336c;
+            margin: 10px 0 5px;
         }
 
         .title {
-            color: #666;
-            margin: 0 0 15px 0;
+            color: #777;
+            margin-bottom: 15px;
+            font-size: 14px;
         }
 
         .description {
-            color: #888;
+            color: #666;
             font-size: 14px;
             line-height: 1.6;
+            margin-bottom: 20px;
         }
 
+        /* ===== SKILLS ===== */
         .skills {
             list-style: none;
             padding: 0;
             display: flex;
             justify-content: center;
             gap: 10px;
-            margin: 15px 0;
+            margin-bottom: 20px;
         }
 
         .skills li {
-            background: #e8f4f8;
-            color: #3498db;
-            padding: 5px 15px;
+            background: #ffe0eb;
+            color: #d6336c;
+            padding: 6px 14px;
             border-radius: 20px;
             font-size: 12px;
         }
 
-        /* BUTTON LINK */
+        /* ===== BUTTON ===== */
         .btn {
             display: inline-block;
-            text-decoration: none;
-            background: linear-gradient(135deg, #667eea, #764ba2);
+            background: linear-gradient(135deg, #ff758c, #ff7eb3);
             color: white;
             padding: 12px 30px;
             border-radius: 25px;
+            text-decoration: none;
             font-size: 14px;
             margin-bottom: 10px;
-            transition: opacity 0.3s;
+            transition: transform 0.3s, opacity 0.3s;
         }
 
         .btn:hover {
             opacity: 0.9;
+            transform: scale(1.05);
         }
     </style>
 </head>
@@ -103,26 +105,31 @@
 
     <div class="card">
         <div class="header">
-            <div class="avatar">K</div>
+            <!-- Avatar Shin (ảnh có sẵn trên mạng) -->
+            <img 
+                src="https://i.pinimg.com/564x/1f/1e/2f/1f1e2f9a2cda2a3b6bb5b7b4b1b6b3c8.jpg"
+                alt="Shin Avatar"
+                class="avatar"
+            >
         </div>
 
         <div class="content">
             <h2 class="name">Hoàng Yến Nhi</h2>
-            <p class="title">Web Developer</p>
+            <p class="title">Student / Future Developer</p>
 
             <p class="description">
-                Đam mê lập trình và thiết kế web.
-                Luôn học hỏi công nghệ mới.
+                Yêu thích lập trình, chăm chỉ học hỏi  
+                và từng bước chinh phục thế giới công nghệ 💗
             </p>
 
             <ul class="skills">
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>JavaScript</li>
+                <li>C++</li>
             </ul>
 
-            
-            <a href="index.html" class="btn">Liên hệ</a>
+            <a href="#" class="btn">Liên hệ</a>
         </div>
     </div>
 
